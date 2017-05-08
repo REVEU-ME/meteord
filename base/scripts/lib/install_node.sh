@@ -1,6 +1,12 @@
 #!/bin/bash
 set -e
+
 NODE_VERSION=4.8.2
+
+if [ -z "$NEW_METEOR" ]; then
+  NODE_VERSION=0.10.43
+fi
+
 NODE_ARCH=x64
 
 # check we need to do this or not
