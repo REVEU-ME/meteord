@@ -1,7 +1,5 @@
-FROM unleet/meteord:base
+FROM unleet/meteord:base-new
 MAINTAINER Reveu Inc.
-
-ENV NEW_METEOR true
 
 ONBUILD COPY ./ /app
 ONBUILD RUN bash $METEORD_DIR/on_build.sh
